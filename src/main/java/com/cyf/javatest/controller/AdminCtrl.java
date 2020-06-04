@@ -17,8 +17,7 @@ public class AdminCtrl {
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @RequestMapping("/index")
-    @ResponseBody
-    public Result index() {
-        return R.success("ok", "admin");
+    public String index() {
+        return "/admin/index";
     }
 }

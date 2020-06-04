@@ -11,15 +11,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Controller
-@RequestMapping("/home")
-public class HomeCtrl {
+@RequestMapping("/admin")
+public class AdminCtrl {
 
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @RequestMapping("/index")
     @ResponseBody
     public Result index() {
-        int i = 1 / 0;
-        return R.success("ok", "home");
+        return R.success("ok", "admin");
     }
 }
